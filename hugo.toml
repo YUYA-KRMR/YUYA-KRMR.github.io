@@ -1,0 +1,7 @@
+baseURL = "http://localhost:1313/"
+languageCode = "ja-jp"
+title = "My Device Site"
+theme = "PaperMod"
+
+[params]
+  author = "Your Name"
