@@ -2,7 +2,7 @@ baseURL = "https://YUYA-KRMR.github.io/"
 languageCode = "ja-jp"
 title = "My Device Site"
 theme = "PaperMod"
-pagenate = 5
+paginate = 5
 
 [params]
   author = "Your Name"
