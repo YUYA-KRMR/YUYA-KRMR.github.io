@@ -6,3 +6,4 @@ paginate = 5
 
 [params]
   author = "Your Name"
+  customCSS = "css/custom.css"
