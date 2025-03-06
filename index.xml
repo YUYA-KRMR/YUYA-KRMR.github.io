@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>My Device Site</title><link>https://YUYA-KRMR.github.io/</link><description>Recent content on My Device Site</description><generator>Hugo -- 0.143.1</generator><language>ja-jp</language><atom:link href="https://YUYA-KRMR.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://YUYA-KRMR.github.io/post/windowssetup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://YUYA-KRMR.github.io/post/windowssetup/</guid><description>&lt;h1 id="windows-11-クリーンインストール手順">Windows 11 クリーンインストール手順&lt;/h1>
+&lt;h3 id="免責">免責&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;strong>各手順が実際には前後している可能性があります。&lt;/strong>&lt;br>
+&lt;strong>その際には該当する手順の項目を確認してください。&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;h3 id="windows11のインストールの際には">Windows11のインストールの際には&lt;/h3>
+&lt;p>1.Microsoftアカウントにログインしインストールする手順&lt;br>
+2.BypassNROでログインを回避しインストールする手順&lt;br>
+の2つの手順が存在します。&lt;br>
+お好みの手順をチェックしてください。&lt;/p>
 &lt;h2 id="1-microsoftアカウントでログインする手順">1. Microsoftアカウントでログインする手順&lt;/h2>
 &lt;h3 id="事前準備">【事前準備】&lt;/h3>
 &lt;ul>
@@ -20,31 +29,37 @@ Rufusなどのツールを使用して、ダウンロードしたISOファイル
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Windowsセットアップの開始:&lt;/strong>&lt;br>
-起動後、インストーラーが立ち上がります。&lt;/p>
+USBブート後、インストーラーが立ち上がります。&lt;/p>
 &lt;ul>
 &lt;li>言語、地域、キーボードレイアウトを選択します。&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>インストール先の選択:&lt;/strong>&lt;br>
-「インストールの種類」では「カスタム：Windowsのみをインストールする」を選び、&lt;br>
+「インストールの種類」では「カスタム～」を選び、&lt;br>
 インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>インストールの進行:&lt;/strong>&lt;br>
-インストールが開始され、必要なファイルのコピーと再起動が自動で行われます。&lt;/p>
+インストールが開始され、必要なファイルのコピーと再起動が自動で行われます。
+※再起動の際には、USBは抜かずにそのままにしておいてください。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>初期セットアップ:&lt;/strong>&lt;br>
 再起動後、セットアップウィザードが起動します。&lt;/p>
 &lt;ul>
-&lt;li>ネットワークに接続してください（必須）。&lt;/li>
-&lt;li>「Microsoftアカウントでサインインする」画面が表示されたら、ご自身のMicrosoftアカウントのメールアドレスとパスワードを入力し、（必要に応じて2段階認証の認証も実施）。&lt;/li>
+&lt;li>ネットワークに接続してください（必須）。
+有線・無線どちらでもOKです。無線の場合は、セットアップウィザードで無線LANに接続するよう促されます。&lt;/li>
+&lt;li>プロダクトキーを入力します。&lt;br>
+このタイミングで用意できてない場合は、インストール完了後でもプロダクトキーを入力できます。&lt;/li>
+&lt;li>「Microsoftアカウントでサインインする」画面が表示されたら、&lt;br>
+ご自身のMicrosoftアカウントのメールアドレスとパスワードを入力してログインします。（必要に応じて2段階認証の認証も実施）。&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>その他の設定完了:&lt;/strong>&lt;br>
-プライバシー設定やその他のオプション設定を行い、セットアップを完了させます。&lt;/p>
+プライバシー設定やその他のオプション設定を行い、セットアップを完了させます。&lt;br>
+この後の再起動のタイミングでUSBを抜いてOKです。&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;hr>
@@ -55,54 +70,37 @@ Rufusなどのツールを使用して、ダウンロードしたISOファイル
 利用する場合は自己責任で実施し、最新の情報や動作状況を事前に確認してください。&lt;/p>&lt;/blockquote>
 &lt;h3 id="事前準備-1">【事前準備】&lt;/h3>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>ISOファイルの取得とUSB作成:&lt;/strong>&lt;br>
-上記【1.】と同様に、公式サイトからISOファイルをダウンロードし、RufusなどでブータブルUSBを作成します。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>BypassNROツールの入手:&lt;/strong>&lt;br>
-インターネット上（例: GitHubリポジトリ）から最新のBypassNROツールをダウンロードします。&lt;br>
-（例: &lt;a href="https://github.com/phocean/BypassNRO">https://github.com/phocean/BypassNRO&lt;/a>）&lt;br>
-※ダウンロードしたファイルはUSBドライブなど、セットアップ中にアクセス可能な場所へ保存してください。&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>ISOファイルの取得とUSB作成:&lt;/strong>&lt;br>
+前記したログインする手順と同様に、公式サイトからISOファイルをダウンロードし、RufusなどでブータブルUSBを作成します。&lt;/li>
 &lt;/ul>
 &lt;h3 id="インストール手順-1">【インストール手順】&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>PCの起動設定:&lt;/strong>&lt;br>
-作成したUSBドライブからPCを起動します（BIOS/UEFI設定でUSBブートを有効に）。&lt;/p>
+作成したUSBドライブからPCを起動します。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Windowsセットアップ開始:&lt;/strong>&lt;br>
-言語、地域、キーボードレイアウトを選択し、インストール先パーティションを決定します。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>インストールの進行:&lt;/strong>&lt;br>
-Windowsのインストールが進行し、PC再起動後にセットアップウィザードに入ります。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>ネットワーク接続の選択:&lt;/strong>&lt;br>
-通常、最新のWindows 11ではネットワーク接続が必須となっており、Microsoftアカウントでのサインインを要求されます。&lt;br>
-もし「オフラインアカウント」または「インターネットに接続しない」選択肢が表示される場合は、それを選んでローカルアカウント設定へ進むことも可能です。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>BypassNROの起動:&lt;/strong>&lt;br>
-ネットワーク接続必須の画面で、Microsoftアカウント入力を求められた場合は以下の手順で回避します。&lt;/p>
+&lt;p>&lt;strong>Windowsセットアップの開始:&lt;/strong>&lt;br>
+USBブート後、インストーラーが立ち上がります。&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>コマンドプロンプトの起動:&lt;/strong>&lt;br>
-「Shift + F10」を押してコマンドプロンプトを開きます。&lt;/li>
-&lt;li>&lt;strong>ツールの実行準備:&lt;/strong>&lt;br>
-USBドライブ内に保存したBypassNROツールのあるディレクトリに移動します。&lt;br>
-例:
-&lt;pre tabindex="0">&lt;code>X:
-cd \Path\To\BypassNRO
-&lt;/code>&lt;/pre>※ここで「X:」はUSBドライブのドライブレターに読み替えてください。&lt;/li>
-&lt;li>&lt;strong>ツールの実行:&lt;/strong>&lt;br>
-次のコマンドを入力してツールを起動します。
-&lt;pre tabindex="0">&lt;code>BypassNRO.exe
-&lt;/code>&lt;/pre>※ツールによっては、管理者権限や特定の手順が求められる場合があります。画面の指示に従ってください。&lt;/li>
+&lt;li>言語、地域、キーボードレイアウトを選択します。&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>ローカルアカウントでのセットアップ:&lt;/strong>&lt;br>
-ツールの実行により、Microsoftアカウントログイン画面が回避され、ローカルアカウントの作成画面へと移行します。&lt;/p></description></item></channel></rss>
+&lt;p>&lt;strong>インストール先の選択:&lt;/strong>&lt;br>
+「インストールの種類」では「カスタム～」を選び、&lt;br>
+インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>インストールの進行:&lt;/strong>&lt;br>
+Windowsのインストールが進行し、PC再起動後にセットアップウィザードに入ります。&lt;br>
+※再起動後、セットアップウィザードに入るまでに有線LANケーブルが刺さっている場合は抜きます。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>※5. &lt;strong>ネットワーク接続について:&lt;/strong>&lt;br>
+この手順では、オフラインでの作業が重要になります。&lt;br>
+前記手順にて記載したLANケーブルについて、もう一度確認してください。&lt;/p>
+&lt;ol start="6">
+&lt;li>
+&lt;p>&lt;strong>BypassNROの起動:&lt;/strong>&lt;br>
+ネットワーク接続の画面で、以下手順を実施します。&lt;/p></description></item></channel></rss>
