@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>My Device Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Windows 11 クリーンインストール手順
+免責
+
+各手順が実際には前後している可能性があります。
+その際には該当する手順の項目を確認してください。
+Windows11のインストールの際には
+1.Microsoftアカウントにログインしインストールする手順
+2.BypassNROでログインを回避しインストールする手順
+の2つの手順が存在します。
+お好みの手順をチェックしてください。
+1. Microsoftアカウントでログインする手順
+【事前準備】
+
+
+ISOファイルの取得:
+Microsoft公式サイトからWindows 11のISOファイルをダウンロードしてください。
+公式URL: https://www.microsoft.com/ja-jp/software-download/windows11
+
+
+ブータブルUSB作成:
+Rufusなどのツールを使用して、ダウンロードしたISOファイルを用いたブータブルUSBドライブを作成します。
+
+
+【インストール手順】
+
+
+PCの起動設定:
+作成したUSBドライブを挿入し、PCのBIOS/UEFI設定でUSBから起動するよう設定し、PCを再起動します。
+
+
+Windowsセットアップの開始:
+USBブート後、インストーラーが立ち上がります。
+
+言語、地域、キーボードレイアウトを選択します。
+
+
+
+インストール先の選択:
+「インストールの種類」では「カスタム～」を選び、
+インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。
+
+
+インストールの進行:
+インストールが開始され、必要なファイルのコピーと再起動が自動で行われます。
+※再起動の際には、USBは抜かずにそのままにしておいてください。
+
+
+初期セットアップ:
+再起動後、セットアップウィザードが起動します。
+
+ネットワークに接続してください（必須）。
+有線・無線どちらでもOKです。無線の場合は、セットアップウィザードで無線LANに接続するよう促されます。
+プロダクトキーを入力します。
+このタイミングで用意できてない場合は、インストール完了後でもプロダクトキーを入力できます。
+「Microsoftアカウントでサインインする」画面が表示されたら、
+ご自身のMicrosoftアカウントのメールアドレスとパスワードを入力してログインします。（必要に応じて2段階認証の認証も実施）。
+
+
+
+その他の設定完了:
+プライバシー設定やその他のオプション設定を行い、セットアップを完了させます。
+この後の再起動のタイミングでUSBを抜いてOKです。
+
+
+
+2. BypassNROを使用してMicrosoftアカウントログインを回避する手順
+
+注意:
+この方法はMicrosoftの公式サポート対象外の非公式な回避策です。
+利用する場合は自己責任で実施し、最新の情報や動作状況を事前に確認してください。
+【事前準備】
+
+ISOファイルの取得とUSB作成:
+前記したログインする手順と同様に、公式サイトからISOファイルをダウンロードし、RufusなどでブータブルUSBを作成します。
+
+【インストール手順】
+
+
+PCの起動設定:
+作成したUSBドライブからPCを起動します。
+
+
+Windowsセットアップの開始:
+USBブート後、インストーラーが立ち上がります。
+
+言語、地域、キーボードレイアウトを選択します。
+
+
+
+インストール先の選択:
+「インストールの種類」では「カスタム～」を選び、
+インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。
+
+
+インストールの進行:
+Windowsのインストールが進行し、PC再起動後にセットアップウィザードに入ります。
+※再起動後、セットアップウィザードに入るまでに有線LANケーブルが刺さっている場合は抜きます。
+
+
+※5. ネットワーク接続について:
+この手順では、オフラインでの作業が重要になります。
+前記手順にて記載したLANケーブルについて、もう一度確認してください。
+
+
+BypassNROの起動:
+ネットワーク接続の画面で、以下手順を実施します。">
+<meta name="author" content="Your Name">
+<link rel="canonical" href="http://localhost:1313/post/windowssetup/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/windowssetup/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Device Site (Alt + H)">My Device Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">Your Name
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="windows-11-クリーンインストール手順">Windows 11 クリーンインストール手順<a hidden class="anchor" aria-hidden="true" href="#windows-11-クリーンインストール手順">#</a></h1>
+<h3 id="免責">免責<a hidden class="anchor" aria-hidden="true" href="#免責">#</a></h3>
+<blockquote>
+<p><strong>各手順が実際には前後している可能性があります。</strong><br>
+<strong>その際には該当する手順の項目を確認してください。</strong></p></blockquote>
+<h3 id="windows11のインストールの際には">Windows11のインストールの際には<a hidden class="anchor" aria-hidden="true" href="#windows11のインストールの際には">#</a></h3>
+<p>1.Microsoftアカウントにログインしインストールする手順<br>
+2.BypassNROでログインを回避しインストールする手順<br>
+の2つの手順が存在します。<br>
+お好みの手順をチェックしてください。</p>
+<h2 id="1-microsoftアカウントでログインする手順">1. Microsoftアカウントでログインする手順<a hidden class="anchor" aria-hidden="true" href="#1-microsoftアカウントでログインする手順">#</a></h2>
+<h3 id="事前準備">【事前準備】<a hidden class="anchor" aria-hidden="true" href="#事前準備">#</a></h3>
+<ul>
+<li>
+<p><strong>ISOファイルの取得:</strong><br>
+Microsoft公式サイトからWindows 11のISOファイルをダウンロードしてください。<br>
+公式URL: <a href="https://www.microsoft.com/ja-jp/software-download/windows11">https://www.microsoft.com/ja-jp/software-download/windows11</a></p>
+</li>
+<li>
+<p><strong>ブータブルUSB作成:</strong><br>
+Rufusなどのツールを使用して、ダウンロードしたISOファイルを用いたブータブルUSBドライブを作成します。</p>
+</li>
+</ul>
+<h3 id="インストール手順">【インストール手順】<a hidden class="anchor" aria-hidden="true" href="#インストール手順">#</a></h3>
+<ol>
+<li>
+<p><strong>PCの起動設定:</strong><br>
+作成したUSBドライブを挿入し、PCのBIOS/UEFI設定でUSBから起動するよう設定し、PCを再起動します。</p>
+</li>
+<li>
+<p><strong>Windowsセットアップの開始:</strong><br>
+USBブート後、インストーラーが立ち上がります。</p>
+<ul>
+<li>言語、地域、キーボードレイアウトを選択します。</li>
+</ul>
+</li>
+<li>
+<p><strong>インストール先の選択:</strong><br>
+「インストールの種類」では「カスタム～」を選び、<br>
+インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。</p>
+</li>
+<li>
+<p><strong>インストールの進行:</strong><br>
+インストールが開始され、必要なファイルのコピーと再起動が自動で行われます。
+※再起動の際には、USBは抜かずにそのままにしておいてください。</p>
+</li>
+<li>
+<p><strong>初期セットアップ:</strong><br>
+再起動後、セットアップウィザードが起動します。</p>
+<ul>
+<li>ネットワークに接続してください（必須）。
+有線・無線どちらでもOKです。無線の場合は、セットアップウィザードで無線LANに接続するよう促されます。</li>
+<li>プロダクトキーを入力します。<br>
+このタイミングで用意できてない場合は、インストール完了後でもプロダクトキーを入力できます。</li>
+<li>「Microsoftアカウントでサインインする」画面が表示されたら、<br>
+ご自身のMicrosoftアカウントのメールアドレスとパスワードを入力してログインします。（必要に応じて2段階認証の認証も実施）。</li>
+</ul>
+</li>
+<li>
+<p><strong>その他の設定完了:</strong><br>
+プライバシー設定やその他のオプション設定を行い、セットアップを完了させます。<br>
+この後の再起動のタイミングでUSBを抜いてOKです。</p>
+</li>
+</ol>
+<hr>
+<h2 id="2-bypassnroを使用してmicrosoftアカウントログインを回避する手順">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順<a hidden class="anchor" aria-hidden="true" href="#2-bypassnroを使用してmicrosoftアカウントログインを回避する手順">#</a></h2>
+<blockquote>
+<p><strong>注意:</strong><br>
+この方法はMicrosoftの公式サポート対象外の非公式な回避策です。<br>
+利用する場合は自己責任で実施し、最新の情報や動作状況を事前に確認してください。</p></blockquote>
+<h3 id="事前準備-1">【事前準備】<a hidden class="anchor" aria-hidden="true" href="#事前準備-1">#</a></h3>
+<ul>
+<li><strong>ISOファイルの取得とUSB作成:</strong><br>
+前記したログインする手順と同様に、公式サイトからISOファイルをダウンロードし、RufusなどでブータブルUSBを作成します。</li>
+</ul>
+<h3 id="インストール手順-1">【インストール手順】<a hidden class="anchor" aria-hidden="true" href="#インストール手順-1">#</a></h3>
+<ol>
+<li>
+<p><strong>PCの起動設定:</strong><br>
+作成したUSBドライブからPCを起動します。</p>
+</li>
+<li>
+<p><strong>Windowsセットアップの開始:</strong><br>
+USBブート後、インストーラーが立ち上がります。</p>
+<ul>
+<li>言語、地域、キーボードレイアウトを選択します。</li>
+</ul>
+</li>
+<li>
+<p><strong>インストール先の選択:</strong><br>
+「インストールの種類」では「カスタム～」を選び、<br>
+インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。</p>
+</li>
+<li>
+<p><strong>インストールの進行:</strong><br>
+Windowsのインストールが進行し、PC再起動後にセットアップウィザードに入ります。<br>
+※再起動後、セットアップウィザードに入るまでに有線LANケーブルが刺さっている場合は抜きます。</p>
+</li>
+</ol>
+<p>※5. <strong>ネットワーク接続について:</strong><br>
+この手順では、オフラインでの作業が重要になります。<br>
+前記手順にて記載したLANケーブルについて、もう一度確認してください。</p>
+<ol start="6">
+<li>
+<p><strong>BypassNROの起動:</strong><br>
+ネットワーク接続の画面で、以下手順を実施します。</p>
+<ul>
+<li><strong>コマンドプロンプトの起動:</strong><br>
+「Shift + F10」を押してコマンドプロンプトを開きます。</li>
+<li><strong>ツールの実行:</strong><br>
+BypassNROツールのあるディレクトリに移動します。<br>
+実行コマンド:
+<pre tabindex="0"><code>oobe\BypassNRO.cmd
+</code></pre></li>
+</ul>
+<p>実行すると再起動されます。<br>
+再起動後、セットアップウィザードに従って設定を進めてください。<br>
+　</p>
+</li>
+<li>
+<p><strong>ローカルアカウントでのセットアップ:</strong><br>
+ツールの実行により、Microsoftアカウントログイン画面が回避され、ローカルアカウントの作成画面へと移行します。</p>
+<ul>
+<li>ローカルアカウント名、パスワード（必要な場合）を設定し、セットアップを進めます。</li>
+<li>プロダクトキーを入力します。<br>
+このタイミングで用意できてない場合は、インストール完了後でもプロダクトキーを入力できます。</li>
+</ul>
+</li>
+<li>
+<p><strong>その他の設定完了:</strong><br>
+プライバシー設定やその他の初期設定を完了し、Windows 11のインストールを終了します。<br>
+この後の再起動のタイミングでUSBを抜いてOKです。</p>
+</li>
+</ol>
+<hr>
+<h2 id="ライセンス認証について">【ライセンス認証について】<a hidden class="anchor" aria-hidden="true" href="#ライセンス認証について">#</a></h2>
+<p>プロダクトキーを後から入力する際には、<br>
+<strong>設定→システム→ライセンス認証</strong><br>
+から可能です。<br>
+オンライン状態時のみ可能なため、ネットワークに接続されているかを確認してください。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My Device Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
