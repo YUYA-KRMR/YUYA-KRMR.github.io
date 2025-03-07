@@ -12,11 +12,22 @@
 
 各手順が実際には前後している可能性があります。
 その際には該当する手順の項目を確認してください。
-Windows11のインストールの際には
+Windows11のインストールにあたって
+未開封のM.2やSSDを始めて接続した際には、
+Windowsインストール時に認識されない場合があります。
+認識されない場合 / 事前に対応する場合 には、3.初期化手順 を参照してください。
 1.Microsoftアカウントにログインしインストールする手順
 2.BypassNROでログインを回避しインストールする手順
 の2つの手順が存在します。
 お好みの手順をチェックしてください。
+目次
+
+1. Microsoftアカウントでログインする手順
+2. BypassNROを使用してMicrosoftアカウントログインを回避する手順
+3. 初期化手順
+まとめ
+
+
 1. Microsoftアカウントでログインする手順
 【事前準備】
 
@@ -86,33 +97,7 @@ ISOファイルの取得とUSB作成:
 
 
 PCの起動設定:
-作成したUSBドライブからPCを起動します。
-
-
-Windowsセットアップの開始:
-USBブート後、インストーラーが立ち上がります。
-
-言語、地域、キーボードレイアウトを選択します。
-
-
-
-インストール先の選択:
-「インストールの種類」では「カスタム～」を選び、
-インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。
-
-
-インストールの進行:
-Windowsのインストールが進行し、PC再起動後にセットアップウィザードに入ります。
-※再起動後、セットアップウィザードに入るまでに有線LANケーブルが刺さっている場合は抜きます。
-
-
-※5. ネットワーク接続について:
-この手順では、オフラインでの作業が重要になります。
-前記手順にて記載したLANケーブルについて、もう一度確認してください。
-
-
-BypassNROの起動:
-ネットワーク接続の画面で、以下手順を実施します。">
+作成したUSBドライブからPCを起動します。">
 <meta name="author" content="Your Name">
 <link rel="canonical" href="http://localhost:1313/post/windowssetup/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
@@ -223,12 +208,23 @@ BypassNROの起動:
 <blockquote>
 <p><strong>各手順が実際には前後している可能性があります。</strong><br>
 <strong>その際には該当する手順の項目を確認してください。</strong></p></blockquote>
-<h3 id="windows11のインストールの際には">Windows11のインストールの際には<a hidden class="anchor" aria-hidden="true" href="#windows11のインストールの際には">#</a></h3>
+<h3 id="windows11のインストールにあたって">Windows11のインストールにあたって<a hidden class="anchor" aria-hidden="true" href="#windows11のインストールにあたって">#</a></h3>
+<p><strong>未開封のM.2やSSDを始めて接続した際には、</strong><br>
+<strong>Windowsインストール時に認識されない場合があります。</strong><br>
+<strong>認識されない場合 / 事前に対応する場合 には、3.初期化手順 を参照してください。</strong></p>
 <p>1.Microsoftアカウントにログインしインストールする手順<br>
 2.BypassNROでログインを回避しインストールする手順<br>
 の2つの手順が存在します。<br>
 お好みの手順をチェックしてください。</p>
-<h2 id="1-microsoftアカウントでログインする手順">1. Microsoftアカウントでログインする手順<a hidden class="anchor" aria-hidden="true" href="#1-microsoftアカウントでログインする手順">#</a></h2>
+<h1 id="目次">目次<a hidden class="anchor" aria-hidden="true" href="#目次">#</a></h1>
+<ul>
+<li><a href="#microsoft">1. Microsoftアカウントでログインする手順</a></li>
+<li><a href="#bypassnro">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順</a></li>
+<li><a href="#mediasetup">3. 初期化手順</a></li>
+<li><a href="#license">まとめ</a></li>
+</ul>
+<hr>
+<h2 id="microsoft">1. Microsoftアカウントでログインする手順<a hidden class="anchor" aria-hidden="true" href="#microsoft">#</a></h2>
 <h3 id="事前準備">【事前準備】<a hidden class="anchor" aria-hidden="true" href="#事前準備">#</a></h3>
 <ul>
 <li>
@@ -283,7 +279,7 @@ USBブート後、インストーラーが立ち上がります。</p>
 </li>
 </ol>
 <hr>
-<h2 id="2-bypassnroを使用してmicrosoftアカウントログインを回避する手順">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順<a hidden class="anchor" aria-hidden="true" href="#2-bypassnroを使用してmicrosoftアカウントログインを回避する手順">#</a></h2>
+<h2 id="bypassnro">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順<a hidden class="anchor" aria-hidden="true" href="#bypassnro">#</a></h2>
 <blockquote>
 <p><strong>注意:</strong><br>
 この方法はMicrosoftの公式サポート対象外の非公式な回避策です。<br>
@@ -353,6 +349,56 @@ BypassNROツールのあるディレクトリに移動します。<br>
 </li>
 </ol>
 <hr>
+<h2 id="mediasetup">3. 初期化手順<a hidden class="anchor" aria-hidden="true" href="#mediasetup">#</a></h2>
+<blockquote>
+<p><strong>注意:</strong><br>
+Windows11インストーラで記憶媒体(M.2やSSDなど)が検出されない場合の手順になります。</p></blockquote>
+<p><strong>はじめに</strong><br>
+PCのBIOS/UEFIで、NVMeが有効になっているかを確認してください。</p>
+<ol start="0">
+<li>
+<p><strong>今動かせるWindowsPCに接続</strong></p>
+<ul>
+<li>今動かせるWindowsPCに接続します。</li>
+</ul>
+</li>
+<li>
+<p><strong>ディスクの管理を起動</strong></p>
+<ul>
+<li>「スタート」ボタンを右クリックし、「ディスクの管理」を選択します。</li>
+</ul>
+</li>
+<li>
+<p><strong>新しいディスクの確認</strong></p>
+<ul>
+<li>「ディスクの管理」ウィンドウ内に、新品のM.2ディスク（通常「ディスク 〇〇」と表示され、状態が「未初期化」または「未割り当て」と表示）<br>
+が表示されているかを確認します。</li>
+</ul>
+</li>
+<li>
+<p><strong>ディスクの初期化</strong></p>
+<ul>
+<li>未初期化のディスク上で右クリックし、「ディスクの初期化」を選択します。</li>
+<li>表示されるダイアログで、<strong>パーティションスタイル</strong>として「GPT（GUIDパーティションテーブル）」を選び、「OK」をクリックします。</li>
+</ul>
+</li>
+<li>
+<p><strong>新しいシンプルボリュームの作成</strong></p>
+<ul>
+<li>初期化後、ディスク上の「未割り当て」領域を右クリックし、「新しいシンプルボリューム」を選択します。</li>
+<li>ウィザードに従って、ボリュームサイズ、ドライブ文字の割当、ファイルシステム（通常はNTFS）などを設定し、フォーマットを完了させます。</li>
+<li>※ボリュームサイズは何も触らなければ、MAXのサイズで設定されます。</li>
+</ul>
+</li>
+<li>
+<p><strong>初期化完了の確認</strong></p>
+<ul>
+<li>正しく初期化・フォーマットが完了すると、エクスプローラーに新しいドライブとして表示され、使用可能になります。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h2 id="ライセンス認証について">【ライセンス認証について】<a hidden class="anchor" aria-hidden="true" href="#ライセンス認証について">#</a></h2>
 <p>プロダクトキーを後から入力する際には、<br>
 <strong>設定→システム→ライセンス認証</strong><br>
