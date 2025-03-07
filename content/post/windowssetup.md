@@ -18,7 +18,7 @@
 - [1. Microsoftアカウントでログインする手順](#microsoft)
 - [2. BypassNROを使用してMicrosoftアカウントログインを回避する手順](#bypassnro)
 - [3. 初期化手順](#mediasetup)
-- [まとめ](#license)
+- [ライセンス認証について](#license)
 
 ---
 
@@ -149,8 +149,7 @@ PCのBIOS/UEFIで、NVMeが有効になっているかを確認してくださ�
 
 ---
 
-<a name="license"></a>
-## 【ライセンス認証について】
+## 【ライセンス認証について】{#license}
 
 プロダクトキーを後から入力する際には、  
 **設定→システム→ライセンス認証**  
