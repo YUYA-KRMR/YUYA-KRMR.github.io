@@ -3,12 +3,23 @@
 &lt;blockquote>
 &lt;p>&lt;strong>各手順が実際には前後している可能性があります。&lt;/strong>&lt;br>
 &lt;strong>その際には該当する手順の項目を確認してください。&lt;/strong>&lt;/p>&lt;/blockquote>
-&lt;h3 id="windows11のインストールの際には">Windows11のインストールの際には&lt;/h3>
+&lt;h3 id="windows11のインストールにあたって">Windows11のインストールにあたって&lt;/h3>
+&lt;p>&lt;strong>未開封のM.2やSSDを始めて接続した際には、&lt;/strong>&lt;br>
+&lt;strong>Windowsインストール時に認識されない場合があります。&lt;/strong>&lt;br>
+&lt;strong>認識されない場合 / 事前に対応する場合 には、3.初期化手順 を参照してください。&lt;/strong>&lt;/p>
 &lt;p>1.Microsoftアカウントにログインしインストールする手順&lt;br>
 2.BypassNROでログインを回避しインストールする手順&lt;br>
 の2つの手順が存在します。&lt;br>
 お好みの手順をチェックしてください。&lt;/p>
-&lt;h2 id="1-microsoftアカウントでログインする手順">1. Microsoftアカウントでログインする手順&lt;/h2>
+&lt;h1 id="目次">目次&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#microsoft">1. Microsoftアカウントでログインする手順&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#bypassnro">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#mediasetup">3. 初期化手順&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#license">まとめ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="microsoft">1. Microsoftアカウントでログインする手順&lt;/h2>
 &lt;h3 id="事前準備">【事前準備】&lt;/h3>
 &lt;ul>
 &lt;li>
@@ -63,7 +74,7 @@ USBブート後、インストーラーが立ち上がります。&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;hr>
-&lt;h2 id="2-bypassnroを使用してmicrosoftアカウントログインを回避する手順">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順&lt;/h2>
+&lt;h2 id="bypassnro">2. BypassNROを使用してMicrosoftアカウントログインを回避する手順&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;strong>注意:&lt;/strong>&lt;br>
 この方法はMicrosoftの公式サポート対象外の非公式な回避策です。&lt;br>
@@ -77,30 +88,4 @@ USBブート後、インストーラーが立ち上がります。&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>PCの起動設定:&lt;/strong>&lt;br>
-作成したUSBドライブからPCを起動します。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Windowsセットアップの開始:&lt;/strong>&lt;br>
-USBブート後、インストーラーが立ち上がります。&lt;/p>
-&lt;ul>
-&lt;li>言語、地域、キーボードレイアウトを選択します。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>インストール先の選択:&lt;/strong>&lt;br>
-「インストールの種類」では「カスタム～」を選び、&lt;br>
-インストール先のパーティションを選択（必要に応じて既存パーティションの削除・再作成）します。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>インストールの進行:&lt;/strong>&lt;br>
-Windowsのインストールが進行し、PC再起動後にセットアップウィザードに入ります。&lt;br>
-※再起動後、セットアップウィザードに入るまでに有線LANケーブルが刺さっている場合は抜きます。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>※5. &lt;strong>ネットワーク接続について:&lt;/strong>&lt;br>
-この手順では、オフラインでの作業が重要になります。&lt;br>
-前記手順にて記載したLANケーブルについて、もう一度確認してください。&lt;/p>
-&lt;ol start="6">
-&lt;li>
-&lt;p>&lt;strong>BypassNROの起動:&lt;/strong>&lt;br>
-ネットワーク接続の画面で、以下手順を実施します。&lt;/p></description></item></channel></rss>
+作成したUSBドライブからPCを起動します。&lt;/p></description></item></channel></rss>
